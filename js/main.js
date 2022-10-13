@@ -34,18 +34,14 @@ function renderModal(projectId) {
 
     let strHTML = `
     <h2>${project.name}</h2>
-    <p class="item-intro text-muted">${project.desc}</p>
-    <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="" />
+    <p class="item-intro text-muted">${project.title}</p>
+    <img class="img-fluid d-block mx-auto" src="${project.img}" alt="" />
     <p>
-        Use this area to describe your project. Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus
-        dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
-        cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+        ${project.desc}
     </p>
     <ul class="list-inline">
-        <li>Date: January 2017</li>
-        <li>Client: Threads</li>
-        <li>Category: Illustration</li>
+        <li>Date: ${project.publishedAt}</li>
+        <li>Categories: ${project.Categories}</li>
         <li class="my-2">   
             <button class="btn btn-dark" data-dismiss="modal" type="button" onclick="goToProjectSite('${project.url}')">
             Try me :)
