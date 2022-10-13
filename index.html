@@ -41,32 +41,29 @@
             <section>
                 <h4>Contact Me</h4>
                 <form>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Your Email</span>
+                    <label
+                        >Your Email
+                        <input type="text" class="email-input form-control col-12" placeholder="me@example.com" />
+                    </label>
+                    <label>
+                        Subject
                         <input
                             type="text"
-                            class="email-input form-control"
-                            aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-default"
-                            placeholder="me@example.com"
-                        />
-                    </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Subject</span>
-                        <input
-                            type="text"
-                            class="subject-input form-control"
+                            class="subject-input form-control col-12"
                             aria-label="Sizing example input"
                             aria-describedby="inputGroup-sizing-default"
                         />
-                    </div>
-                    <textarea
-                        class="form-control email-content"
-                        id="validationTextarea"
-                        placeholder="please tell me..."
-                        required
-                    ></textarea>
-                    <button type="button" class="submit-btn btn btn-dark">Submit</button>
+                    </label>
+                    <label>
+                        your text
+                        <textarea
+                            class="form-control email-content col-12"
+                            id="validationTextarea"
+                            placeholder="please tell me..."
+                            required
+                        ></textarea>
+                    </label>
+                    <button type="button" class="submit-btn btn btn-dark col-6">Submit</button>
                 </form>
             </section>
         </aside>
