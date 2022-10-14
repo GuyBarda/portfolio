@@ -48,9 +48,9 @@ function renderModal(projectId) {
             </button>
         </li>
     </ul>
-    <button class="btn btn-primary" data-dismiss="modal" type="button">
+    <button class="btn btn-primary" data-dismiss="modal" type="button" onclick="showContactButton()">
         <i class="fa fa-times"></i>
-        Close Project
+        Close
     </button>`;
 
     $(".modal-body").html(strHTML);

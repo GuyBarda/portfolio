@@ -89,7 +89,7 @@ function createProjects() {
             "Bookshop",
             "flag all mines!",
             "A retro game made modern!",
-            "https://guybarda.github.io/Minesweeper/",
+            "https://guybarda.github.io/bookshop/",
             "",
             0,
             ["matrix", " mouse events"],
